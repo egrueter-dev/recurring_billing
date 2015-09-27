@@ -33,13 +33,13 @@
 #
 
 Stripe.plan :good_audience do |plan|
-  plan.name = 'ACME Silver'
+  plan.name = 'Good Audience'
   plan.amount = 110000 # $1100.00
   plan.interval = 'month'
 end
 
 Stripe.plan :standard_retainer do |plan|
-  plan.name = 'ACME Gold'
+  plan.name = 'Standard Retainer'
   plan.amount = 170000 # $1600.00
   plan.interval = 'month'
 end
