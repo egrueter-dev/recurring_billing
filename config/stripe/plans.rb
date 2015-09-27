@@ -30,3 +30,16 @@
 #
 # This will export any new plans to stripe.com so that you can
 # begin using them in your API calls.
+#
+
+Stripe.plan :good_audience do |plan|
+  plan.name = 'ACME Silver'
+  plan.amount = 110000 # $1100.00
+  plan.interval = 'month'
+end
+
+Stripe.plan :standard_retainer do |plan|
+  plan.name = 'ACME Gold'
+  plan.amount = 170000 # $1600.00
+  plan.interval = 'month'
+end
