@@ -1,0 +1,10 @@
+<p> Add validations here <p>
+
+<%= form_tag('/plans', method: 'post') do %>
+  <%= text_field_tag(:amount, 'Amount') %>
+  <%= text_field_tag(:interval, 'Interval') %>
+  <%= text_field_tag(:name, 'Name') %>
+  <%= text_field_tag(:id, 'ID') %>
+  <%= submit_tag("Create New Plan") %>
+<% end %>
+

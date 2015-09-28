@@ -32,14 +32,14 @@
 # begin using them in your API calls.
 #
 
-Stripe.plan :good_audience do |plan|
-  plan.name = 'Good Audience'
-  plan.amount = 110000 # $1100.00
-  plan.interval = 'month'
-end
+# Stripe.plan :good_audience do |plan|
+  # plan.name = 'Good Audience'
+  # plan.amount = 110000 # $1100.00
+  # plan.interval = 'month'
+# end
 
-Stripe.plan :standard_retainer do |plan|
-  plan.name = 'Standard Retainer'
-  plan.amount = 170000 # $1600.00
-  plan.interval = 'month'
-end
+# Stripe.plan :standard_retainer do |plan|
+  # plan.name = 'Standard Retainer'
+  # plan.amount = 170000 # $1600.00
+  # plan.interval = 'month'
+# end

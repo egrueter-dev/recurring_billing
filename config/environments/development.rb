@@ -36,6 +36,10 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+  config.stripe.secret_key = 'sk_test_PTVRgvgpatfQZVMkHSVlTqLs'
+
+  config.stripe.publishable_key = 'pk_test_qoPnFfgcvMUlGoE7212eMRVR'
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
