@@ -7,4 +7,12 @@
 # makes 'Your_Gmail_Username' available as ENV["GMAIL_USERNAME"]
 # Add application configuration variables here, as shown below.
 
-STRIPE_SECRET_KEY: sk_test_PTVRgvgpatfQZVMkHSVlTqLs
+# Admin Braintree Configuration
+BRAINTREE_MERCHANT_ID: '7j2strvjvjbtnf63'
+BRAINTREE_PUBLIC_KEY: 'x687b4rg778z56kc'
+BRAINTREE_PRVATE_KEY: '3bf393ab5bfa6128f3db8e14c8380de4'
+
+RECURLY_API_KEY: '89b9c6f963964fe3b39ed369e6bcd382'
+RECURLY_SUBDOMAIN:
+RECURLY_PUBLIC_API_KEY: 'sjc-McXgCNsC8Kuw4DnYOFOEV5'
+
