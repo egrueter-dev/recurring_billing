@@ -16,9 +16,9 @@
     </section>
 
     <section id="errors"></section>
-
+    <% # write this form by hand.... %>
     <section>
-      <form method="post" action="/subscriptions/create">
+      <form method="post" action='/subscriptions' >
         <div>
           <label for="number">Card Number</label>
           <input type="text" data-recurly="number" id="number">
@@ -59,23 +59,18 @@
           <input type="text" data-recurly="country" id="country" name="country">
         </div>
 
-       <div>
+        <div>
           <label for="postal_code">Postal Code</label>
           <input type="text" data-recurly="postal_code" id="postal_code" name="postal_code">
         </div>
-
-
-
-
 
         <button id="subscribe">Subscribe</button>
 
         <input type="hidden" data-recurly="token" name="recurly-token">
       </form>
     </section>
-
-
     <script>
+
 // Configure recurly.js
 recurly.configure('<%= Recurly.js.public_key %>');
 
@@ -98,9 +93,11 @@ $('form').on('submit', function (event) {
   // data-recurly="token" field above
 
   recurly.token(form, function (err, token) {
-    // send any errors to the error function below
-    if (err) error(err);
-    else form.submit();
+    if (err) {
+      error(err);
+    } else form.submit();
+      // Make a cool response on the form if this works.
+      // $.post('http://localhost:3030/subscriptions', { recurly_token: token });
   });
 });
 
